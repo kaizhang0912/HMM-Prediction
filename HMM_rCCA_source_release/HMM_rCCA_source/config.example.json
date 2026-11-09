@@ -1,0 +1,35 @@
+{
+  "output_dir": "./results/hmm_rcca_10x5",
+  "datasets": {
+    "PT": {
+      "pre": "./data/subject_ts_dict_pre.npy",
+      "post": "./data/subject_ts_dict_post.npy",
+      "confounds_template": "./data/confounds/PT/{phase}/{session_id}/func/{session_id}_task-{task}_desc-confounds_timeseries.tsv"
+    },
+    "HC": {
+      "pre": "./data/subject_ts_dict_HC_pre.npy",
+      "post": "./data/subject_ts_dict_HC_post.npy",
+      "confounds_template": "./data/confounds/HC/{phase}/{session_id}/func/{session_id}_task-{task}_desc-confounds_timeseries.tsv"
+    }
+  },
+  "clinical_file": "./data/clinical_metrics.csv",
+  "clinical_columns": null,
+  "anchor_column": null,
+  "excluded_subjects": {"PT": [], "HC": []},
+  "exclusions_reviewed": false,
+  "fd_threshold": 0.3,
+  "skip_fd_tr": 5,
+  "expand_frames": 1,
+  "motion_report_threshold": 0.4,
+  "tr_seconds": 2.0,
+  "n_splits": 10,
+  "n_repeats": 5,
+  "split_seed": 1000,
+  "n_states": 8,
+  "hmm_seed": 42,
+  "hmm_iterations": 200,
+  "hmm_tol": 0.01,
+  "fixed_c": 0.7,
+  "min_tr": 3,
+  "feature_key": "delta_r"
+}

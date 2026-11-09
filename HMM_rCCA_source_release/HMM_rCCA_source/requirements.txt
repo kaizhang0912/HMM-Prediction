@@ -1,0 +1,9 @@
+# Use the versions from the original analysis environment.
+# This is a dependency list, not a reproducible version lock.
+numpy
+pandas
+scipy
+scikit-learn
+nilearn
+hmmlearn
+cca-zoo
